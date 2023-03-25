@@ -1,7 +1,277 @@
-#menu
+/***********menu***********/
+ #menu
 {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 60px;
+	background-color: #c8a073;
+	overflow: hidden;
+	z-index: 999;
+	
+ }
+ #menu li 
+ {
+	display: inline-block;
+	margin-left: 100px;
+
+ }
+ a {
+	display: block;
+	float: left;
+	padding: 19px;
+	text-decoration: none;
+	width: 14.285%;
+	text-align: center;
+	color: black;
+
+  }
+ #menu a:hover {
+	text-decoration: underline;
+  }
+
+/***********menu***********/
+
+
+
+
+/***********fonts***********/
+.AboutMe{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/***********fonts***********/
+
+
+
+/***********headings***********/
+h1 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 22px;
+	box-sizing: inherit;
+	letter-spacing: normal;
+	text-align: center;
+	text-transform: none;
+	font-weight: 400;
+	font-size: 32px;
+	word-wrap: break-word;
+	position: relative;
+	width: 100%;	
+	text-align: center ;
+	background-color: #e0c3a2;
+	color: rgb(0, 0, 0);
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	direction: ltr;
+}
+/***********headings***********/
+
+  
+
+  
+
+
+  
+
+
+/***********Q&A***********/
+  body {
+	font-size: 16px;
+	width: fit-content;
+  }
+  .collapsible {
+	display: block;
+	margin-bottom: 1rem;
+  }
+  .collapsible input {
+	position: fixed;
+	left: -9999px;
+  }
+  
+  .collapsible .collapser {
+	cursor: pointer;
+	border: 0px;
+  }
+  .collapsible .arrow {
+	float: right;
+	margin-inline: 0em;
+	display: inline-block;
+	transform: rotate(90deg);
+	transition: transform 0.25s ease-out;
+  }
+  .collapsible input:checked ~ .arrow,
+  .collapsible input:checked ~ .collapser .arrow {
+	transform: rotate(270deg);
+  }
+  .collapsible .collapsed {
+	font-size: 0;
+	margin: 0;
+	opacity: 0;
+	padding: 0;
+	transition: opacity 0.25s, margin 0.5s 0.25s, font-size 0.5s 0.25s, padding 0.5s 0.25s;
+  }
+  .collapsible input:checked ~ .collapsed {
+	font-size: 16px;
+	opacity: 1;
+	height: auto;
+	padding: 5px 0;
+	transition: margin 0.25s, padding 0.25s, font-size 0.25s, opacity 0.5s 0.25s;
+  }
+/***********Q&A***********/
+
+
+
+
+/***********like button***********/
+  .iframe-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75vh;
+  }
+  
+  iframe {
+	margin: auto;
+  }
+/***********like button***********/
+
+
+
+
+/***********QR***********/
+.text-image-container {
+	overflow: auto;
+  }
+  
+  img {
+	float: left;
+	margin-right: 20px;
+  }
+  
+  .text-container {
+	display: inline-block;
+  }
+/***********QR***********/
+  
+
+
+
+/***********Gallery***********/
+ .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #d8dca4;
+    color: white;
+    font-size: 25px;
+    padding: 16px 32px;
+  }
+    
+  .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 0 4px;
+  
+  }
+  
+  .column {
+    flex: 35%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-bottom: 0%;
+    vertical-align: middle;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display:table;
+  }
+/***********Gallery***********/
+
+
+
+
+/***********Comtact me***********/
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: #e5d79a;
+	padding: 20px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 20px;
+  }
+  
+  .form input {
+	height: 35px;
+	outline: none;
+	border: 2px solid rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
+	padding: 20px 10px;
+	border-radius: 5px;
+	transition: .5s;
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+  }
+  
+  .form input:focus {
+	background: rgb(227, 205, 157);
+  }
+  
+
+  .form button {
+	width: 100%;
+	color: rgb(0, 0, 0);
+	border: 2px solid rgb(0, 0, 0);
+	transition: .5s;
+	font-size: 20px;
+	outline: none;
+	height: 45px;
+	border-radius: 5px;
+	background: rgb(230, 213, 181);
+	align-self: flex-end;
+  }
+/***********Comtact me***********/
+
+	  
